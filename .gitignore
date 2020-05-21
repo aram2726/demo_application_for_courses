@@ -1,0 +1,6 @@
+# Idea
+.idea
+.vscode
+
+# Compiled files
+*.pyc
