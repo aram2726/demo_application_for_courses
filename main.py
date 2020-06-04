@@ -30,7 +30,7 @@ def main():
 
         action = str(input("enter action: "))
 
-        if action in auth_actions:
+        if auth_actions.get(action):
             email = str(input("email: "))
             password = str(getpass("password: "))
 
@@ -38,7 +38,7 @@ def main():
             # So it is a callable object.
             auth_actions[action](email, password)
 
-        if action in helper_actions:
+        if helper_actions.get(action):
             helper_actions[action]()
 
 
